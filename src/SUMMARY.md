@@ -1,3 +1,6 @@
 # Summary
 
-- [Chapter 1](./chapter_1.md)
+- [Hard Surface Modelling](./hard_surface.md)
+- [Character Modelling](./characters.md)
+- [Projects and Scenes](./projects_and_scenes.md)
+- [Hotkeys](./hotkeys.md)
