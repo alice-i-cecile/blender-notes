@@ -10,6 +10,8 @@ The standard hot key is listed, but I also include notes about the how / what / 
 - Redo: Ctrl + Shift + Z
 - Save: Ctrl + S
 - Change modes: Tab
+- Copy (Ctrl + C) / Paste (Ctrl + V) / Duplicate (Ctrl + D)
+- Delete (Delete / X)
 
 ## Camera Movement
 
@@ -44,6 +46,7 @@ The standard hot key is listed, but I also include notes about the how / what / 
 - Lock axes: X / Y / Z during a transform operation
   - Only transformations along that axis will be allowed
   - Red is X, Blue is Y, Green is Z
+  - Use Shify + axis key to do all axes except that
 - Snapping: Shift + S for wheel menu, Shift + Tab for snap during transform
   - Use magnet icon on the top to control behavior
   - Snap to grid for easy global alignment
@@ -81,10 +84,6 @@ The standard hot key is listed, but I also include notes about the how / what / 
   - Right click to divide at even points
   - Drag to adjust divisions
   - Can increase number of cuts and smoothness!
-- Bridge Edge Loops
-  - Connect weird gaps smoothly
-- Knife Tool (K)
-  - Cut apart geometry
 - Boolean operations (Ctrl + Shift + B)
   - Create two mesh objects
   - Make them overlap
@@ -94,10 +93,27 @@ The standard hot key is listed, but I also include notes about the how / what / 
   - Select an operation: Union, Intersection, Difference, Slice
     - Difference subtracts the first selected object from the second
 
+## Topology Tools
+
+- Bridge Edge Loops
+  - Connect weird gaps smoothly
+- Knife Tool (K)
+  - Cut lines and faces into new vertices
+  - Shift to midpoint snap
+  - Remember to press Enter to confirm
+- Connect Vertex Path (J)
+  - Create edges from vertices
+  - Useful for filling in gaps
+- Create Face (F)
+  - Add skin over a wireframe of vertices or edges
+  - If only two verts are selected an edge will be created
+  - Only select a single face at a time to avoid risk of internal geometry
+
 ## Polishing Geometry
 
 - Bevel (Ctrl + B)
   - Can bevel both vertices and edges
+  - If you select an edge along a flat surface, you can split it in two and evenly push them out!
 - Face inset
   - Great for making chimneys
 
@@ -135,3 +151,47 @@ The standard hot key is listed, but I also include notes about the how / what / 
   - Simply groups objects
 - Boolean Union
   - Actually unifies overlapping geometry
+
+## Modifiers
+
+Only the modifiers I actually find useful are listed.
+
+- Don't apply until exporting, unless you want to make changes that break the modifier
+- If results are weird, remember to apply scale.
+
+### Define Geometry
+
+- Mirror
+  - Remember to always do this as your first step for modelling bilateral objects!
+- Solidify
+  - Adds thickness to stuff
+  - Great for leaves, books, other flat-ish objects
+  - Okay for creating base geometry if you apply it
+- Skin
+  - Extrude in all directions
+  - Can use for stick-model style base geometry creation; just apply it after
+  - Use Ctrl + Click to change thickness at each point!!
+
+### Create many copies
+
+- Array
+  - Copies in a straight line
+  - Can make radial instead for e.g. snowflakes or gears
+
+## Deform and tweak
+
+- Bevel
+  - Does what you expect, but more automatically
+- Shrinkwrap
+  - Project onto another surface
+- Simple Deform
+  - Deform it using easy math
+- Lattice / Hook / Warp
+  - Deform in sculpting-flavored ways
+
+## Change detail
+
+- Decimate
+- Subdivision surfaces
+- Weld
+  - Join / deduplicate nearby vertices
