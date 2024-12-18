@@ -10,14 +10,18 @@ The standard hot key is listed, but I also include notes about the how / what / 
 - Redo: Ctrl + Shift + Z
 - Save: Ctrl + S
 - Change modes: Tab
-- Copy (Ctrl + C) / Paste (Ctrl + V) / Duplicate (Ctrl + D)
+- Copy (Ctrl + C) / Paste (Ctrl + V) / Duplicate (Shift + D)
 - Delete (Delete / X)
 
 ## Camera Movement
 
-- Middle click + drag: orbit
-- Mouse wheel: zoom
-- Shift + middle click + drag: pan
+- Orbit (Middle Mouse + drag)
+  - Use Alt + Middle Mouse to center view around cursor
+- Zoom (Mouse wheel)
+  - Seemingly gets stuck after a certain amount
+  - Use Shift + B to set viewport to selected region
+  - Focus an object with Numpad .
+- Pan (Shift + Middle Mouse + Drag)
 - Orthographic views:
   - use the view widget in the top right
   - Numpad 1/3/7/9 for orthographic views
@@ -41,8 +45,11 @@ The standard hot key is listed, but I also include notes about the how / what / 
     - Go to an orthographic view (Numpad 1)
     - Translate (G) along Z axis (Z) until it's close to the ground plane
     - Toggle snapping (Shift + S / Shift + Tab) and snap to grid
+    - Messing with the Transform Orientation is good to achieve careful manipulation
 - Rotate: R
+  - Can change transform pivot point
 - Scale: S
+  - Set scale to zero to align things!
 - Lock axes: X / Y / Z during a transform operation
   - Only transformations along that axis will be allowed
   - Red is X, Blue is Y, Green is Z
@@ -66,8 +73,12 @@ The standard hot key is listed, but I also include notes about the how / what / 
 
 ### Modes
 
-- Mirror mesh geometry (Butterfly in the top right)
-  - Extremely useful and safer than mirror modifier
+- Proportional editing (O)
+  - Perfect for more subtle / less mechanical manipulations
+  - Mouse wheel to change radius
+  - Can mess with kernels if you really want to
+- Snapping (Shift + Tab)
+  - Great for making stuff stick together / line up
 
 ## Selection
 
